@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.WebAPI", "OnionArchitecture.WebAPI.csproj", "{C128DFB8-EA45-4633-9B73-C470D7E2EE5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.WebAPI", "OnionArchitecture.WebAPI\OnionArchitecture.WebAPI.csproj", "{C128DFB8-EA45-4633-9B73-C470D7E2EE5A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Domain", "..\OnionArchitecture.Domain\OnionArchitecture.Domain.csproj", "{2AAD351C-E5DF-45CA-B338-AE129CA62802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Domain", "OnionArchitecture.Domain\OnionArchitecture.Domain.csproj", "{2AAD351C-E5DF-45CA-B338-AE129CA62802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.infrastructure", "..\OnionArchitecture.infrastructure\OnionArchitecture.infrastructure.csproj", "{6E27C94A-8BB8-400B-A83B-DB42D347B5C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.infrastructure", "OnionArchitecture.infrastructure\OnionArchitecture.infrastructure.csproj", "{6E27C94A-8BB8-400B-A83B-DB42D347B5C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
