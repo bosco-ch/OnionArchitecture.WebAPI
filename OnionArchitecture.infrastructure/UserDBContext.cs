@@ -12,6 +12,7 @@ namespace OnionArchitecture.infrastructure
         public DbSet<UserLoginHistory> userLoginHistories { get; set; }
         public UserDBContext(DbContextOptions options) : base(options)
         {
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
