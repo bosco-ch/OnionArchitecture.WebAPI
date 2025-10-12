@@ -13,10 +13,11 @@ namespace OnionArchitecture.WebAPI.Controllers
         private readonly IUserRepository userRepository;
         private readonly UserDomainService userDomainService;
         private readonly UserDBContext context;
-        public LoginController(UserRepository userRepository, UserDomainService userDomainService)
+        public LoginController(UserRepository userRepository, UserDomainService userDomainService, UserDBContext context)
         {
             this.userRepository = userRepository;
             this.userDomainService = userDomainService;
+            this.context = context;
         }
         /// <summary>
         /// 登录 用户
