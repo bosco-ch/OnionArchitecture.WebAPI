@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using OnionArchitecture.Domain.Entities;
 using System.Reflection;
 
