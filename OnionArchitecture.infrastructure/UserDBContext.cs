@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using OnionArchitecture.Domain.Entities;
 using System.Reflection;
 
@@ -12,6 +13,7 @@ namespace OnionArchitecture.infrastructure
         public DbSet<UserLoginHistory> userLoginHistories { get; set; }
         public UserDBContext(DbContextOptions options) : base(options)
         {
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
