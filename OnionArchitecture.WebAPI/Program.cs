@@ -37,7 +37,8 @@ if (string.IsNullOrEmpty(connectionString))
 {
     builder.Services.AddDbContext<UserDBContext>(dbcontect =>
     {
-        dbcontect.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+        dbcontect.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));//mysql 连接
+        //dbcontect.UseSqlServer(connectionString);//sqlserver连接
     });
 }
 else

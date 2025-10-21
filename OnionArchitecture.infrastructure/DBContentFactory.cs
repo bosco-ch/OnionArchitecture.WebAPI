@@ -22,14 +22,20 @@ namespace OnionArchitecture.infrastructure
             //    .AddUserSecrets("19f8a100-1dac-446d-a934-7cf6150caf12")
             //    .Build();
             ////获取一下字符串
+
+
+
+
             //string? connectionString = configuration.GetConnectionString("DefaultConnection")?.ToString();
             //if (string.IsNullOrEmpty(connectionString))
-            //{
-            //    throw new InvalidOperationException("No ConnectString:未发现连接字符串");
-            //}
+
+            string testconnect = "Server=192.168.31.118;Database=OnionArchitecture;Uid=sa;Pwd=StrongPass123!;TrustServerCertificate=True;";
+            string testconnect = "Server=192.168.31.118;Database=OnionArchitecture;Uid=root;Pwd=Panchengqi521#;TrustServerCertificate=true;";
+
             string testconnect = "Server=192.168.31.118;Database=OnionArchitecture;Uid=root;Pwd=Panchengqi521#;TrustServerCertificate=true;";
             var build = new DbContextOptionsBuilder<UserDBContext>();
-            build.UseMySql(testconnect, ServerVersion.AutoDetect(testconnect));
+            //build.UseMySql(testconnect, ServerVersion.AutoDetect(testconnect));//mysql 连接
+            build.UseSqlServer(testconnect);//sqlserver 连接
             return new UserDBContext(build.Options);
         }
     }
