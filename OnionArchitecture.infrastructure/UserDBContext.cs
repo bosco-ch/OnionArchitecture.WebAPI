@@ -11,6 +11,7 @@ namespace OnionArchitecture.infrastructure
         public DbSet<User> Users { get; set; }
         //不需要为非根实体生成DBSet
         public DbSet<UserLoginHistory> userLoginHistories { get; set; }
+
         public UserDBContext(DbContextOptions options) : base(options)
         {
 
@@ -19,7 +20,6 @@ namespace OnionArchitecture.infrastructure
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
         }
     }
 }
